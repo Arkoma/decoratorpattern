@@ -3,11 +3,11 @@ package com.example.decoratorpattern;
 public class DarkRoast extends Beverage {
 
    public DarkRoast() {
-       super.description = "Get that smoky flavor";
+       super.description = "Dark Roast Coffee";
    }
 
     @Override
-    public float cost() {
-        return 0;
+    public double cost() {
+        return .99;
     }
 }

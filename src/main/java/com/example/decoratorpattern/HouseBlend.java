@@ -3,11 +3,11 @@ package com.example.decoratorpattern;
 public class HouseBlend extends Beverage {
 
    public HouseBlend() {
-       super.description = "Our greatest blend of flavors";
+       super.description = "House Blend Coffee";
    }
 
     @Override
-    public float cost() {
-        return 0;
+    public double cost() {
+        return .89;
     }
 }

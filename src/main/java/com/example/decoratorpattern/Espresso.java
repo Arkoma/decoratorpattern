@@ -3,11 +3,11 @@ package com.example.decoratorpattern;
 public class Espresso extends Beverage {
 
    public Espresso() {
-       super.description = "Our strongest coffee beverage";
+       super.description = "Espresso";
    }
 
     @Override
-    public float cost() {
-        return 0;
+    public double cost() {
+        return 1.99;
     }
 }
