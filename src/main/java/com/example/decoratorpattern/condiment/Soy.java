@@ -2,6 +2,10 @@ package com.example.decoratorpattern.condiment;
 
 import com.example.decoratorpattern.Beverage;
 
+import static com.example.decoratorpattern.Beverage.Size.GRANDE;
+import static com.example.decoratorpattern.Beverage.Size.TALL;
+import static com.example.decoratorpattern.Beverage.Size.VENTI;
+
 public class Soy extends CondimentDecorator {
 
     public Soy(Beverage beverage) {
@@ -10,7 +14,7 @@ public class Soy extends CondimentDecorator {
 
     @Override
     public double cost() {
-        return beverage.cost() + .15;
+        return SizePriceAdjuster.adjuctPriceForSize(beverage.getSize(), beverage.cost() + .15);
     }
 
     @Override
