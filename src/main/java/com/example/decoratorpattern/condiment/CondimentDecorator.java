@@ -1,6 +1,7 @@
 package com.example.decoratorpattern.condiment;
 
 import com.example.decoratorpattern.Beverage;
+import com.example.decoratorpattern.Size;
 
 public abstract class CondimentDecorator extends Beverage {
 

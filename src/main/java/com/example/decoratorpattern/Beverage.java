@@ -2,9 +2,7 @@ package com.example.decoratorpattern;
 
 public abstract class Beverage {
 
-    public enum Size { TALL, GRANDE, VENTI }
-
-    Size size = Size.TALL;
+    private Size size = Size.TALL;
 
     public Size getSize() {
         return size;
