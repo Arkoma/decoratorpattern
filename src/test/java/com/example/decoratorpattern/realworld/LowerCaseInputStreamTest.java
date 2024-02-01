@@ -1,7 +1,6 @@
 package com.example.decoratorpattern.realworld;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.util.FastByteArrayOutputStream;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -14,7 +13,6 @@ class LowerCaseInputStreamTest {
 
     @Test
     void read() {
-        int c;
         try {
             InputStream in =
                     new LowerCaseInputStream(
